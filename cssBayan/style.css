@@ -4,6 +4,10 @@
     margin: 0;
   }
 
+body { 
+  overflow-y: scroll;
+}
+
 main { 
     width: 50%;
     margin: auto;
