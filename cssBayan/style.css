@@ -20,6 +20,7 @@ h1 {
 
 .label { 
   width: 100%;  
+  cursor: pointer;
 }
 
 .input-header {
@@ -29,9 +30,26 @@ h1 {
   justify-content: space-between;
 }
 
-.close {
- }
-
 .checkbox {
   appearance: none;
+}
+
+.image-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: 0;
+  transition: 0.2s;
+}
+
+label:has(>.checkbox:checked) .img { 
+  width: 60%;
+  height: 20rem;
+}
+
+label:has(>.checkbox:checked) .close { 
+  transform: rotate(45deg);
 }
